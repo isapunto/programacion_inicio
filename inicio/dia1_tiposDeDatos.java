@@ -43,6 +43,6 @@ public class dia1_tiposDeDatos {
 	}
 	public static void main(String[] args) {
 		//saludo();
-		variables();
+		//variables();
 	}
 }
