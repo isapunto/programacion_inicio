@@ -26,7 +26,10 @@ public class dia3_bucles{
     //En este caso lo ideal es utilizar el BUCLE FOR.
 
   }
+  // Bucle creciente de 0 hasta el número introducido, de dos en dos.
   public static void bucleContadorDe2En2HastaNumero(int numero){}
+  // Bucle decreciente de 100 al número menor que 100 introducido.
+  // EXTRA: Controlar que el número sea menor que 100.
   public static void bucleContadorDe100AlNumero(int numero){}
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
