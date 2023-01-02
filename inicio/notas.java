@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class notas {
-  public static String calcularNotaFinal(double nota){
+  public static String calcularNotaFinal(int nota){
     String notaFinal;
     if (nota < 5) {
       notaFinal = "suspenso";
@@ -18,20 +18,46 @@ public class notas {
     }
     return notaFinal;
   }
+  public static String calcularNotaFinal_switch(int nota){
+    String notaFinal;
+    switch (nota){
+      case 5:
+        notaFinal = "suficiente";
+        break;
+      case 6:
+        notaFinal = "bien";
+        break;
+      case 7:
+        notaFinal = "notable";
+        break;
+      case 8:
+        notaFinal = "notable";
+        break;
+      case 9:
+        notaFinal = "sobresaliente";
+        break;
+      case 10:
+        notaFinal = "sobresaliente";
+        break;
+      default:
+        notaFinal = "suspenso";
+    }
+    return notaFinal;
+  }
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     String nombre;
     String salida = "n";
-    double nota = 0;
+    int nota = 0;
 
     System.out.println("Dime tu nombre: ");
     nombre = sc.nextLine();
     while(salida.equals("n")){
       System.out.println("Dime tu nota: ");
-      nota = Double.parseDouble(sc.nextLine());
+      nota = Integer.parseInt(sc.nextLine());
       System.out.println(nombre + ", tu nota es: " + nota);
-      System.out.println(calcularNotaFinal (nota));
+      System.out.println(calcularNotaFinal_switch(nota));
       System.out.println("Quieres salir? y/n: ");
       salida = sc.nextLine();
     }
