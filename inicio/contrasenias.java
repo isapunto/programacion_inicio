@@ -17,11 +17,9 @@ public class contrasenias{
   }
 
   public static boolean comparar (String palabra1, String palabra2){
-    boolean iguales = true;
+    boolean iguales = false;
     if(palabra1.equals(palabra2)){
       iguales = true;
-    }else{
-      iguales = false;
     }
     return iguales;
   }
