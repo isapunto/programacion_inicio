@@ -17,11 +17,14 @@ public class contrasenias{
   }
 
   public static boolean comparar (String palabra1, String palabra2){
+    /*
     boolean iguales = false;
     if(palabra1.equals(palabra2)){
       iguales = true;
     }
     return iguales;
+    */
+    return palabra1.equals(palabra2);
   }
 
   public static void main(String[] args) {
